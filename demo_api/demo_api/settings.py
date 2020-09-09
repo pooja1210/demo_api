@@ -25,7 +25,7 @@ SECRET_KEY = 'u%grmfu#kyikzie_%y3s86*p!5^2++kdhx38(rgdaqeq7@gd=7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '862899c0dc04.ngrok.io'] 
 
 
 # Application definition
@@ -122,6 +122,18 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379/1",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# SESSION_CACHE_ALIAS = "default"
+# CACHE_TTL = 60 * 1
 
 
 # Static files (CSS, JavaScript, Images)
